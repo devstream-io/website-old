@@ -22,7 +22,7 @@ disqusShortname = ""      # disqus_shortname
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
 
 [author]                  # essential                     # 必需
-  name = "Daniel Hu"
+  name = "The DevStream Team"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
