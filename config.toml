@@ -1,4 +1,4 @@
-baseURL = "https://blog.dtm.dtv"
+baseURL = "https://blog.dtm.dev"
 title = "DevStream Blog"
 theme = "hugo-theme-cleanwhite"
 languageCode = "en-us"
