@@ -4,8 +4,8 @@ title:      "Hello, World"
 subtitle:   "DevStream Codebase Walkthrough"
 date:       2022-03-21
 author:     "Tiexin Guo"
-title:      "Hello, World"
 draft:      false
+tag: ["hello"]
 image:      "https://miro.medium.com/max/1400/1*madfDDTkMAmf40q-WL0_-g.jpeg"
 ---
 
