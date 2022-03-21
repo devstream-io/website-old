@@ -1,9 +1,14 @@
 ---
-title: "Hello, World"
-date: 2022-03-21T18:14:00+08:00
-draft: false
-author: "Tiexin Guo"
+layout:     post
+title:      "Hello, World"
+subtitle:   "DevStream Codebase Walkthrough"
+date:       2022-03-21
+author:     "Tiexin Guo"
+title:      "Hello, World"
+draft:      false
+image:      "https://miro.medium.com/max/1400/1*madfDDTkMAmf40q-WL0_-g.jpeg"
 ---
+
 Hello, and welcome to the DevStream blog!
 
 In this very first "hello world" post, I will:
