@@ -6,7 +6,7 @@ date:       2022-03-21
 author:     "Tiexin Guo"
 draft:      false
 tag: ["hello"]
-image:      "https://miro.medium.com/max/1400/1*madfDDTkMAmf40q-WL0_-g.jpeg"
+image:      "https://live.staticflickr.com/65535/51935344644_a1b33d3eed_k.jpg"
 ---
 
 Hello, and welcome to the DevStream blog!
