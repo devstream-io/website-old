@@ -13,7 +13,7 @@ hasCJKLanguage = true
 home = ["HTML", "RSS", "Algolia"]
 
 [params]
-header_image = "img/home-bg-jeep.jpg"
+header_image = "https://live.staticflickr.com/65535/51557092431_0eb85a2018_k.jpg"
 SEOTitle = "DevStream Blog"
 description = "DevStream: the open-source DevOps toolchain manager (DTM)."
 keyword = "DevStream"
