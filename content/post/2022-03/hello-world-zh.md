@@ -178,7 +178,7 @@ dtm apply -f path_to_your_config.yaml
 dtm develop create-plugin --name=my-pluing-name-here
 ```
 
-好了。打完手工。也许你还没看爽，但是我写累了。我要休息了，I need a cup of coffee! now! bye!
+好了。打完收工。也许你还没看爽，但是我写累了。我要休息了，I need a cup of coffee! now! bye!
 
 > 最后，记得去看一下英文版，你会看到不一样的风景！
 > 我不骗你哈，我是来搞笑的，你要严谨的知识，得去英文版看。
