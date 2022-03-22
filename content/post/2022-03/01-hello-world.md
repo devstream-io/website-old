@@ -5,9 +5,12 @@ subtitle:   "DevStream Codebase Walkthrough"
 date:       2022-03-21
 author:     "Tiexin Guo"
 draft:      false
-tag: ["hello"]
 image:      "https://live.staticflickr.com/65535/51935344644_a1b33d3eed_k.jpg"
 ---
+
+> English version: [《Hello, World》](../01-hello-world)Author: @Tiexin Guo(郭铁心)
+>
+> 中文版：[《你好，世界》](../hello-world-zh)作者：@胡涛(Daniel Hu)
 
 Hello, and welcome to the DevStream blog!
 
