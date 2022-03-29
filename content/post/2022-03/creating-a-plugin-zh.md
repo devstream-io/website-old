@@ -8,6 +8,12 @@ draft:      false
 image:      "https://live.staticflickr.com/65535/51962846125_5e441c5bc4_k.jpg"
 ---
 
+> English version: [《Creating a DevStream (dtm) Plugin for Anything》](../creating-a-plugin.md)Author: @Tiexin Guo(郭铁心)
+>
+> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](../creating-a-plugin-zh.md)作者：@胡涛(Daniel Hu)
+
+---
+
 你没看错，这个标题不是在瞎吹，不管你想加什么奇奇怪怪的功能到 DevStream 里面，都可以通过自定义一个新插件来实现。（当然请不要试图通过插件方式实现 dtm 命令去根据用户心情改变日志颜色啥的。）
 
 > 还记得上一篇文章吗？我们介绍过 DevStream 的代码库。没看过？这是链接：

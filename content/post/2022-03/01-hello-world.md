@@ -12,6 +12,8 @@ image:      "https://live.staticflickr.com/65535/51935344644_a1b33d3eed_k.jpg"
 >
 > 中文版：[《你好，世界》](../hello-world-zh)作者：@胡涛(Daniel Hu)
 
+---
+
 Hello, and welcome to the DevStream blog!
 
 In this very first "hello world" post, I will:
