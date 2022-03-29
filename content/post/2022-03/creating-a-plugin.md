@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Creating a DevStream (`dtm`) Plugin for Anything"
+title:      "Creating a DevStream (dtm) Plugin for Anything"
 subtitle:   "A Tutorial of DevStream Plugin Development"
 date:       2022-03-29
 author:     "Tiexin Guo"
@@ -18,7 +18,7 @@ Yes, the title of this post isn't bluffing: you can actually create a plugin for
  
 In this blog, we will walk you through the steps of creating a DevStream plugin from scratch with an example. 
 
-## Quick Recap: What is DevStream
+## What is DevStream
 
 DevStream is an amazing tool that lets you install, update, manage, and integrate your DevOps tools quickly and flexibly.
 
@@ -26,7 +26,7 @@ Not to brag, but with DevStream, you can have your own DevOps toolchain that is 
 
 Don't believe it? Check out our [docs](https://docs.dtm.dev/en/latest/) and follow the quickstart guide!
 
-## What Plugins Are Already There
+## Existing Plugins
 
 At the moment of publishing this article, we already support the following tools:
 
@@ -119,31 +119,35 @@ Untracked files:
     internal/pkg/plugin/localfile/
 ```
 
-## Directory Structure Recap
+Let's have a quick recap of the directory structure:
 
-### cmd/plugin/localfile/main.go
+### cmd/
 
-This is the main entrance of your plugin. But here you don't need to do anything; nothing.
+`cmd/plugin/localfile/main.go` is the main entrance of your plugin. But here you don't need to do anything; nothing.
 
 `dtm` has already generated the code for you, including the interfaces that you must implement.
 
-### docs/plugins/localfile_plugin.md
+### docs/
 
-This is the automatically generated documentation.
+`docs/plugins/localfile_plugin.md` is the automatically generated documentation.
 
 Yep, I know `dtm` is automagic, but it can't read your mind. I'm afraid that you will have to write your own doc.
 
 But hey, at least here you get a reminder that you need to create a doc :)
 
-### internal/pkg/plugin/localfile
+### internal/pkg/
 
-Your plugin's main logic lives here. Here, we need to:
+`internal/pkg/plugin/localfile` has your plugin's main logic.
+
+Here, we need to:
 
 - define your input parameters (options);
 - implement the validation of the input parameters;
 - implement four mandatory interfaces.
 
-## Core Concepts: Config / State / Resource 
+## Core Concepts
+
+### Config/State/Resource 
 
 Before explaining interfaces and implementing them, let's have a look at how DevStream actually works:
 
@@ -151,13 +155,11 @@ Before explaining interfaces and implementing them, let's have a look at how Dev
 - _State_ is a map containing each tool's name, plugin, options, etc. It's used to store the result of `dtm`'s last action.
 - _Resource_ is the tool that the plugin created. The `Read` interface returns a description of that resource, which should be the same as the _State_ if nothing has been changed after `dtm`'s last action.
 
-DevStream decides what to do based on your _Config_, the _State_, and the _Resource_'s status. Examples:
+DevStream decides what to do based on your _Config_, the _State_, and the _Resource_'s status. See the flowchart below:
 
-- If nothing has been changed after a successful `dtm apply`, and you run `dtm apply` again, nothing should happen.
-- If you changed the config after a successful `dtm apply`, the next `apply` will make sure the _State_ and _Resource_ are updated, using the _Config_ as the single source of truth.
-- If you changed some part of the resource or even deleted it after a successful `dtm apply`, the next `dtm apply` will try to update the _Resource_ so that the _Resource_ matches the _State_ and the _Config_.
+![](/img/config_state_resource.png)
 
-## Interfaces in Detail
+### Interfaces
 
 A quick recap: each DevStream plugin must satisfy the following four interfaces:
 
@@ -172,7 +174,9 @@ Return values:
 - `Read`'s first return value is a description of the _Resource_, which should be the same as the _State_ if nothing has changed.
 - `Delete` returns `(true, nil)` if there is no error; otherwise it returns `(false, error)`.
 
-## Implement Input Options and Validation
+## Coding
+
+### Input Options/Validation
 
 Now let's open `internal/pkg/plugin/localfile/options.go` and add options according to our design in the previous section.
 
@@ -209,7 +213,7 @@ func validate(options *Options) []error {
 }
 ```
 
-## CRUD - Create
+### Create()
 
 We want to create the file based on the input options. So, let's do just that in the file `internal/pkg/plugin/localfile/create.go`.
 
@@ -281,7 +285,7 @@ func writefile(filename, content string) error {
 }
 ```
 
-## CRUD - Read
+### Read()
 
 Let's also implement the `Read` interface.
 
@@ -338,7 +342,7 @@ On the return value:
 - If the file exists, return the "status" of it and no error.
 - Otherwise, return nil and the error.
 
-## CRUD - Update
+### Update()
 
 `Update` will be triggered if `Read` returns a different result than what's recorded in the _State_.
 
@@ -354,7 +358,7 @@ func Update(options map[string]interface{}) (map[string]interface{}, error) {
 }
 ```
 
-## CRUD - Delete
+### Delete()
 
 Last but not least, let's implement the `Delete` interface.
 
