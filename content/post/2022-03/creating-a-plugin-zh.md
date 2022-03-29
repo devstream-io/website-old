@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "给 DevStream (`dtm`) 开发一个插件，整合一切你想要的功能"
+title:      "给 DevStream (dtm) 开发一个插件，整合一切你想要的功能"
 subtitle:   "DevStream 插件开发教程"
 date:       2022-03-29
 author:     "Daniel Hu"
@@ -211,7 +211,9 @@ func validate(options *Options) []error {
 }
 ```
 
-## 增删改查之 - Create
+## 实现 CURD 接口
+
+### 增删改查之 - Create
 
 我们要根据输入的 options 来实现 create 逻辑，ok，打开 `internal/pkg/plugin/localfile/create.go` 文件，开始挥毫泼墨吧！
 
@@ -281,7 +283,7 @@ func writefile(filename, content string) error {
 }
 ```
 
-## 增删改查之 - Read
+### 增删改查之 - Read
 
 让我们继续来实现 `Read` 接口吧！
 
@@ -338,7 +340,7 @@ func Read(options map[string]interface{}) (map[string]interface{}, error) {
 - 如果文件存在，返回文件“状态，没有 error。
 - 其他情况，返回 nil 还有对应的 error。
 
-## 增删改查之 - Update
+### 增删改查之 - Update
 
 `Update` 会在 `Read` 返回的结果和 State 中的记录不一致时触发。
 
@@ -354,7 +356,7 @@ func Update(options map[string]interface{}) (map[string]interface{}, error) {
 }
 ```
 
-## 增删改查之 - Delete
+### 增删改查之 - Delete
 
 终于到最后一个接口了，我们来实现 `Delete` 吧！
 
