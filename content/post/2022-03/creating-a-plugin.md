@@ -8,6 +8,12 @@ draft:      false
 image:      "https://live.staticflickr.com/65535/51962846125_5e441c5bc4_k.jpg"
 ---
 
+> English version: [《Creating a DevStream (dtm) Plugin for Anything》](../creating-a-plugin.md)Author: @Tiexin Guo(郭铁心)
+>
+> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](../creating-a-plugin-zh.md)作者：@胡涛(Daniel Hu)
+
+---
+
 Yes, the title of this post isn't bluffing: you can actually create a plugin for just about anything that takes your fancy.
 
 > In my previous article, I walked you guys through DevStream's codebase.
