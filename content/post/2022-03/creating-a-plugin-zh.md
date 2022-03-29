@@ -153,6 +153,8 @@ Untracked files:
 
 **配置、状态、资源 == Config / State / Resource**
 
+![](/img/config_state_resource.png)
+
 在具体写代码逻辑前，我们还是需要先知道 DevStream 是怎么工作的：
 
 - 配置(Config)：是工具(tools)列表，每一个工具有其对应的 name、plugin、options 等配置项。
