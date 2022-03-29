@@ -115,7 +115,7 @@ Your branch is up to date with 'origin/main'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
     cmd/plugin/localfile/
-    docs/plugins/localfile_plugin.md
+    docs/plugins/localfile.md
     internal/pkg/plugin/localfile/
 ```
 
@@ -129,7 +129,7 @@ Let's have a quick recap of the directory structure:
 
 ### docs/
 
-`docs/plugins/localfile_plugin.md` is the automatically generated documentation.
+`docs/plugins/localfile.md` is the automatically generated documentation.
 
 Yep, I know `dtm` is automagic, but it can't read your mind. I'm afraid that you will have to write your own doc.
 
