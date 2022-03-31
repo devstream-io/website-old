@@ -1,7 +1,7 @@
 
 ---
-title: "How-to About DevStream"
-linkTitle: "How-To"
+title: "How-to"
+linkTitle: "怎么玩转 DevStream"
 weight: 10
 ---
 
