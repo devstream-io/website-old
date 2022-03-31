@@ -11,9 +11,9 @@ resources:
   byline: ""
 ---
 
-{{< blocks/cover title="Hello, World" image_anchor="top" height="full" color="orange" >}}
+{{< blocks/cover title="Creating a DevStream (dtm) Plugin for Anything" image_anchor="top" height="full" color="orange" >}}
 
-DevStream Codebase Walkthrough
+A Tutorial of DevStream Plugin Development
 
 {{< /blocks/cover >}}
 
@@ -31,7 +31,7 @@ Yes, the title of this post isn't bluffing: you can actually create a plugin for
 > 
 > If you haven't read it yet, here's a quick link for you:
 > 
-> [https://blog.dtm.dev/post/2022-03/01-hello-world/](https://blog.dtm.dev/post/2022-03/01-hello-world/).
+> [https://blog.dtm.dev/hello-world/](https://blog.dtm.dev/hello-world/).
  
 In this blog, we will walk you through the steps of creating a DevStream plugin from scratch with an example. 
 
