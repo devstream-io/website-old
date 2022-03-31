@@ -1,3 +1,6 @@
-blog.github.io
-*/.DS_Store
-.ieda
+/public
+resources/
+node_modules/
+package-lock.json
+.hugo_build.lock
+.idea
