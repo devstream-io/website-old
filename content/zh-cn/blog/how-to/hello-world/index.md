@@ -1,9 +1,9 @@
 ---
 date: 2022-03-21
-title: "Hello, World"
+title: "你好，世界"
 linkTitle: "Hello, World"
 description: "DevStream Codebase Walkthrough"
-author: Tiexin Guo ([@IronCore864](https://github.com/IronCore864))
+author: 胡涛 ([@daniel-hutao](https://github.com/daniel-hutao))
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
@@ -19,9 +19,9 @@ DevStream Codebase Walkthrough
 
 ---
 
-> English version: [《Hello, World》](../hello-world)Author: @Tiexin Guo(郭铁心)
+> English version: [《Hello, World》](https://blog.dtm.dev/hello-world/)Author: @Tiexin Guo(郭铁心)
 >
-> 中文版：[《你好，世界》](../todo)作者：@胡涛(Daniel Hu)
+> 中文版：[《你好，世界》](https://blog.dtm.dev/zh-cn/hello-world/)作者：@胡涛(Daniel Hu)
 
 ---
 

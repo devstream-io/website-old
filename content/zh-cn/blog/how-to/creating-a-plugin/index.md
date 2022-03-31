@@ -1,7 +1,7 @@
 ---
 date: 2022-03-29
 title: "给 DevStream (dtm) 开发一个插件，整合一切你想要的功能"
-linkTitle: "给 DevStream (dtm) 开发一个插件，整合一切你想要的功能"
+linkTitle: "Creating a DevStream (dtm) Plugin for Anything"
 description: "DevStream 插件开发教程"
 author: 胡涛 ([@daniel-hutao](https://github.com/daniel-hutao))
 resources:
@@ -19,9 +19,9 @@ DevStream 插件开发教程
 
 ---
 
-> English version: [《Creating a DevStream (dtm) Plugin for Anything》](../creating-a-plugin.md)Author: @Tiexin Guo(郭铁心)
+> English version: [《Creating a DevStream (dtm) Plugin for Anything》](https://blog.dtm.dev/creating-a-devstream-dtm-plugin-for-anything/)Author: @Tiexin Guo(郭铁心)
 >
-> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](../creating-a-plugin-zh.md)作者：@胡涛(Daniel Hu)
+> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](https://blog.dtm.dev/zh-cn/creating-a-devstream-dtm-plugin-for-anything/)作者：@胡涛(Daniel Hu)
 
 ---
 
