@@ -8,7 +8,15 @@ resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
   params:
-  byline: "Photo: Riona MacNamara / CC-BY-CA"
+  byline: ""
+---
+
+{{< blocks/cover title="Hello, World" image_anchor="top" height="full" color="orange" >}}
+
+DevStream Codebase Walkthrough
+
+{{< /blocks/cover >}}
+
 ---
 
 > English version: [《Creating a DevStream (dtm) Plugin for Anything》](../creating-a-plugin/)Author: @Tiexin Guo(郭铁心)
