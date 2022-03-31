@@ -27,7 +27,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - run: npm ci
+      - run: npm install postcss-cli
       - run: hugo --minify
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
