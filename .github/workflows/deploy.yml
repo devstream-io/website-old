@@ -35,6 +35,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.TOKEN }}
           REPOSITORY_NAME: devstream-io/blog.github.io
           BRANCH: main # The branch the action should deploy to.
+          FOLDER: . # The folder the action should deploy.
           clean: true
           clean-exclude: |
             CNAME
