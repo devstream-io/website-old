@@ -11,7 +11,7 @@ resources:
     byline: ""
 ---
 
-{{< blocks/cover title="DevStream Community Contributor" image_anchor="top" height="med" color="orange" >}}
+{{< blocks/cover title="DevStream Community Contributor" image_anchor="top" height="auto" color="orange" >}}
 
 三月新晋贡献者
 
