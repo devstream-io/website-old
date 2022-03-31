@@ -1,7 +1,7 @@
 ---
 date: 2022-03-21
-title: "你好，世界"
-linkTitle: "Hello, World"
+title: "Hello, World"
+linkTitle: "你好，世界"
 description: "DevStream Codebase Walkthrough"
 author: 胡涛 ([@daniel-hutao](https://github.com/daniel-hutao))
 resources:
