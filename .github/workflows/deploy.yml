@@ -7,20 +7,35 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
-          submodules: 'recursive'
-      - uses: actions/setup-node@v2
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.96.0'
+          extended: true
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm install postcss-cli
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: npm ci
+      - run: hugo --minify
       - name: Deploy 🚀
-        uses: benmatselby/hugo-deploy-gh-pages@master
-        env:
-          HUGO_EXTENDED: true
-          GITHUB_ACTOR: daniel-hutao
-          TARGET_REPO: devstream-io/blog.github.io
-          TARGET_BRANCH: main
-          TOKEN: ${{ secrets.TOKEN }}
-          CNAME: blog.dtm.dev
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY_NAME: devstream-io/blog.github.io
+          BRANCH: main # The branch the action should deploy to.
+          FOLDER: docs # The folder the action should deploy.
+          clean: true
+          clean-exclude: |
+            CNAME
