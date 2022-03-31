@@ -1,8 +1,8 @@
 ---
 date: 2022-03-31
 title: "DevStream Community Contributors"
-linkTitle: "DevStream 的社区贡献者们"
-description: "DevStream 的社区贡献者们"
+linkTitle: "DevStream 社区可爱的贡献者们"
+description: "DevStream 社区可爱的贡献者们"
 author: 胡涛 ([@daniel-hutao](https://github.com/daniel-hutao))
 resources:
 - src: "**.{png,jpg}"
