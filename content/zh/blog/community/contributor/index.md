@@ -8,10 +8,11 @@ resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
   params:
-    byline: ""
+    byline: "Photo: Daniel Hu / CC-BY-CA"
 ---
-
-{{< blocks/cover title="DevStream Community Contributor" image_anchor="top" height="auto" color="orange" >}}
+{{< imgproc featured-background Fill "1200x800" >}}
+三星堆纪念品马克杯
+{{< /imgproc >}}
 
 三月新晋贡献者
 
@@ -19,8 +20,6 @@ resources:
 002-陈映初
 003-余苏明
 004-谢开天
-
-{{< /blocks/cover >}}
 
 ---
 

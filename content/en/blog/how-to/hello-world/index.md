@@ -29,9 +29,9 @@ Dong'an Lake, Chengdu, China.
 {{< /imgproc >}}
 
 ---
-> English version: [《Hello, World》](https://blog.dtm.dev/hello-world/)Author: @Tiexin Guo(郭铁心)
+> English version: [《Hello, World》](../hello-world)Author: @Tiexin Guo(郭铁心)
 >
-> 中文版：[《你好，世界》](https://blog.dtm.dev/zh-cn/hello-world/)作者：@胡涛(Daniel Hu)
+> 中文版：[《你好，世界》](../../zh/blog/hello-world/)作者：@胡涛(Daniel Hu)
 ---
 
 ## TL;DR

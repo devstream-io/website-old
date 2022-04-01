@@ -1,5 +1,5 @@
 baseURL = "https://blog.dtm.dev"
-title = "DevStream Blog"
+title = "DevStream"
 
 # Language settings
 contentDir = "content/en"
@@ -46,7 +46,7 @@ pygmentsStyle = "tango"
 
 # Configure how URLs look like per section.
 [permalinks]
-blog = ":slug/"
+blog = "/:section/:slug/"
 
 ## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
 [blackfriday]
@@ -70,16 +70,16 @@ id = "UA-00000000-0"
 
 [languages]
 [languages.en]
-title = "DevStream blog"
-description = "DevStream blog"
+title = "DevStream"
+description = "DevStream"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
-[languages.zh-cn]
-title = "DevStream 博客"
-description = "DevStream 博客"
+[languages.zh]
+title = "DevStream"
+description = "DevStream"
 languageName ="中文"
-contentDir = "content/zh-cn"
+contentDir = "content/zh"
 time_format_default = "02.01.2006"
 time_format_blog = "02.01.2006"
 
@@ -212,3 +212,23 @@ enable = false
   url = "https://example.org/mail"
   icon = "fa fa-envelope"
   desc = "Discuss development issues around the project"
+
+[[menu.main]]
+  name = "GitHub"
+  weight = 40
+  url = "https://github.com/merico-dev/stream"
+
+[[menu.main]]
+  name = "Docs"
+  weight = 50
+  url = "https://docs.dtm.dev/en/latest/"
+
+[[menu.main]]
+  name = "Medium"
+  weight = 60
+  url = "https://medium.com/devstream"
+
+[[menu.main]]
+  name = "Dev.to"
+  weight = 70
+  url = "https://dev.to/devstream"

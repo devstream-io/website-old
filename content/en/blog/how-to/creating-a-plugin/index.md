@@ -17,7 +17,7 @@ Yes, the title of this post isn't bluffing: you can actually create a plugin for
 > 
 > If you haven't read it yet, here's a quick link for you:
 > 
-> [https://blog.dtm.dev/hello-world/](https://blog.dtm.dev/hello-world/).
+> [Hello, world!](../hello-world).
  
 In this blog, we will walk you through the steps of creating a DevStream plugin from scratch with an example. 
 
@@ -29,9 +29,9 @@ A cat outside a lake side Starbucks, Chengdu, China.
 
 ---
 
-> English version: [《Creating a DevStream (dtm) Plugin for Anything》](https://blog.dtm.dev/creating-a-devstream-dtm-plugin-for-anything/)Author: @Tiexin Guo(郭铁心)
+> English version: [《Creating a DevStream (dtm) Plugin for Anything》](../creating-a-devstream-dtm-plugin-for-anything/)Author: @Tiexin Guo(郭铁心)
 >
-> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](https://blog.dtm.dev/zh-cn/creating-a-devstream-dtm-plugin-for-anything/)作者：@胡涛(Daniel Hu)
+> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](../../zh/blog/creating-a-devstream-dtm-plugin-for-anything/)作者：@胡涛(Daniel Hu)
 
 ---
 

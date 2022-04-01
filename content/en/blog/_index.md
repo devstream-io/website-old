@@ -1,6 +1,6 @@
 ---
 title: "DevStream Blog"
-linkTitle: "All Posts"
+linkTitle: "Blog"
 menu:
   main:
     weight: 30

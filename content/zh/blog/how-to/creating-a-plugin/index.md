@@ -8,30 +8,28 @@ resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
   params:
-  byline: ""
+    byline: "Photo: Tiexin Guo / CC-BY-CA"
 ---
 
-{{< blocks/cover title="给 DevStream (dtm) 开发一个插件，整合一切你想要的功能" image_anchor="top" height="full" color="orange" >}}
-
-DevStream 插件开发教程
-
-{{< /blocks/cover >}}
-
----
-
-> English version: [《Creating a DevStream (dtm) Plugin for Anything》](https://blog.dtm.dev/creating-a-devstream-dtm-plugin-for-anything/)Author: @Tiexin Guo(郭铁心)
->
-> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](https://blog.dtm.dev/zh-cn/creating-a-devstream-dtm-plugin-for-anything/)作者：@胡涛(Daniel Hu)
-
----
+{{< imgproc featured-background Fill "1200x800" >}}
+成都兴隆湖畔星巴克门口的猫
+{{< /imgproc >}}
 
 你没看错，这个标题不是在瞎吹，不管你想加什么奇奇怪怪的功能到 DevStream 里面，都可以通过自定义一个新插件来实现。（当然请不要试图通过插件方式实现 dtm 命令去根据用户心情改变日志颜色啥的。）
 
 > 还记得上一篇文章吗？我们介绍过 DevStream 的代码库。没看过？这是链接：
 >
-> [https://blog.dtm.dev/post/2022-03/hello-world-zh/](https://blog.dtm.dev/post/2022-03/hello-world-zh/).
+> [你好，世界！](../hello-world).
 
 今天我们准备通过一个小 demo 程序来展示如何从零开发一个新插件。
+
+---
+
+> English version: [《Creating a DevStream (dtm) Plugin for Anything》](/blog/creating-a-devstream-dtm-plugin-for-anything/)Author: @Tiexin Guo(郭铁心)
+>
+> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](../creating-a-devstream-dtm-plugin-for-anything/)作者：@胡涛(Daniel Hu)
+
+---
 
 ## 一句话总结: 什么（重音），是（停顿） DevStream？
 
