@@ -33,7 +33,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           token: ${{ secrets.TOKEN }}
-          repository-name: devstream-io/blog.github.io
+          repository-name: devstream-io/devstream-io.github.io
           branch: main # The branch the action should deploy to.
           folder: public # The folder the action should deploy.
           clean: true
