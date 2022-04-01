@@ -8,21 +8,7 @@ resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
   params:
-  byline: ""
----
-
-{{< blocks/cover title="Creating a DevStream (dtm) Plugin for Anything" image_anchor="top" height="full" color="orange" >}}
-
-A Tutorial of DevStream Plugin Development
-
-{{< /blocks/cover >}}
-
----
-
-> English version: [《Creating a DevStream (dtm) Plugin for Anything》](https://blog.dtm.dev/creating-a-devstream-dtm-plugin-for-anything/)Author: @Tiexin Guo(郭铁心)
->
-> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](https://blog.dtm.dev/zh-cn/creating-a-devstream-dtm-plugin-for-anything/)作者：@胡涛(Daniel Hu)
-
+    byline: "Photo: Tiexin Guo / CC-BY-CA"
 ---
 
 Yes, the title of this post isn't bluffing: you can actually create a plugin for just about anything that takes your fancy.
@@ -34,6 +20,20 @@ Yes, the title of this post isn't bluffing: you can actually create a plugin for
 > [https://blog.dtm.dev/hello-world/](https://blog.dtm.dev/hello-world/).
  
 In this blog, we will walk you through the steps of creating a DevStream plugin from scratch with an example. 
+
+---
+
+{{< imgproc featured-background Fill "1200x800" >}}
+A cat outside a lake side Starbucks, Chengdu, China.
+{{< /imgproc >}}
+
+---
+
+> English version: [《Creating a DevStream (dtm) Plugin for Anything》](https://blog.dtm.dev/creating-a-devstream-dtm-plugin-for-anything/)Author: @Tiexin Guo(郭铁心)
+>
+> 中文版：[《给 DevStream (dtm) 开发一个插件，整合一切你想要的功能》](https://blog.dtm.dev/zh-cn/creating-a-devstream-dtm-plugin-for-anything/)作者：@胡涛(Daniel Hu)
+
+---
 
 ## What is DevStream
 

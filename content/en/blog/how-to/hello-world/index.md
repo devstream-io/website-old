@@ -8,21 +8,7 @@ resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
   params:
-    byline: ""
----
-
-{{< blocks/cover title="Hello, World" image_anchor="top" height="full" color="orange" >}}
-
-DevStream Codebase Walkthrough
-
-{{< /blocks/cover >}}
-
----
-
-> English version: [《Hello, World》](https://blog.dtm.dev/hello-world/)Author: @Tiexin Guo(郭铁心)
->
-> 中文版：[《你好，世界》](https://blog.dtm.dev/zh-cn/hello-world/)作者：@胡涛(Daniel Hu)
-
+    byline: "Photo: Tiexin Guo / CC-BY-CA"
 ---
 
 Hello, and welcome to the DevStream blog!
@@ -36,6 +22,16 @@ If you haven't heard of DevStream yet, please have a quick glance over our [READ
 
 Without further adieu, let's get started.
 
+---
+
+{{< imgproc featured-background Fill "1200x800" >}}
+Dong'an Lake, Chengdu, China.
+{{< /imgproc >}}
+
+---
+> English version: [《Hello, World》](https://blog.dtm.dev/hello-world/)Author: @Tiexin Guo(郭铁心)
+>
+> 中文版：[《你好，世界》](https://blog.dtm.dev/zh-cn/hello-world/)作者：@胡涛(Daniel Hu)
 ---
 
 ## TL;DR
