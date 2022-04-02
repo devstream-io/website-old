@@ -61,7 +61,7 @@ At the moment of publishing this article, we already support the following tools
 
 We aim to have 50 plugins at the end of 2022!
 
-Check out our [README](https://github.com/merico-dev/stream) for the latest status.
+Check out our [README](https://github.com/devstream-io/devstream) for the latest status.
 
 ## Why Would I Want to Create a DevStream Plugin
 
@@ -113,7 +113,7 @@ The plugin will create a file with desired content according to this piece of co
 First, let's clone the DevStream repo and generate some scaffolding code:
 
 ```shell
-git clone git@github.com:merico-dev/stream.git
+git clone git@github.com:devstream-io/devstream.git
 cd stream
 # builds dtm locally to make sure it's using the same dependencies as your new plugin
 make build-core
@@ -244,7 +244,7 @@ import (
 
     "github.com/mitchellh/mapstructure"
 
-    "github.com/merico-dev/stream/pkg/util/log"
+    "github.com/devstream-io/devstream/pkg/util/log"
 )
 
 func Create(options map[string]interface{}) (map[string]interface{}, error) {
@@ -320,7 +320,7 @@ import (
 
     "github.com/mitchellh/mapstructure"
 
-    "github.com/merico-dev/stream/pkg/util/log"
+    "github.com/devstream-io/devstream/pkg/util/log"
 )
 
 func Read(options map[string]interface{}) (map[string]interface{}, error) {
@@ -390,7 +390,7 @@ import (
 
     "github.com/mitchellh/mapstructure"
 
-    "github.com/merico-dev/stream/pkg/util/log"
+    "github.com/devstream-io/devstream/pkg/util/log"
 )
 
 func Delete(options map[string]interface{}) (bool, error) {

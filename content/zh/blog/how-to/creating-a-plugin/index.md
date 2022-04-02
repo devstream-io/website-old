@@ -61,7 +61,7 @@ DevStream 是一个能够快速安装、更新、管理、整合你的 DevOps �
 
 我们的目标今年内实现 50 个插件！
 
-（请到我们的 [README](https://github.com/merico-dev/stream) 查看最新动态）
+（请到我们的 [README](https://github.com/devstream-io/devstream) 查看最新动态）
 
 ## 为什么需要自定义开发 DevStream 插件？
 
@@ -111,7 +111,7 @@ tools:
 首先我们 clone 一份 DevStream 源码，然后尝试生成一些脚手架代码：
 
 ```shell
-git clone git@github.com:merico-dev/stream.git
+git clone git@github.com:devstream-io/devstreamtream.git
 cd stream
 # builds dtm locally to make sure it's using the same dependencies as your new plugin
 make build-core
@@ -242,7 +242,7 @@ import (
 
     "github.com/mitchellh/mapstructure"
 
-    "github.com/merico-dev/stream/pkg/util/log"
+    "github.com/devstream-io/devstreamutil/log"
 )
 
 func Create(options map[string]interface{}) (map[string]interface{}, error) {
@@ -318,7 +318,7 @@ import (
 
     "github.com/mitchellh/mapstructure"
 
-    "github.com/merico-dev/stream/pkg/util/log"
+    "github.com/devstream-io/devstreamutil/log"
 )
 
 func Read(options map[string]interface{}) (map[string]interface{}, error) {
@@ -388,7 +388,7 @@ import (
 
     "github.com/mitchellh/mapstructure"
 
-    "github.com/merico-dev/stream/pkg/util/log"
+    "github.com/devstream-io/devstreamutil/log"
 )
 
 func Delete(options map[string]interface{}) (bool, error) {

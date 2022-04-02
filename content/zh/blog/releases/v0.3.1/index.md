@@ -35,12 +35,12 @@ _开发者注：从技术上讲，这个版本并不能向后兼容v0.3.0; 所�
 
 ## 自v0.3.0以来的主要改进
 
-我们现在有了一个新logo！查看我们的 [README.md](https://github.com/merico-dev/stream#readme=).
+我们现在有了一个新logo！查看我们的 [README.md](https://github.com/devstream-io/devstream#readme=).
 
 另外，我们的网站现在也上线了:
-- [homepage](https://dtm.dev/)
-- [blog](https://blog.dtm.dev/)
-- [docs](https://docs.dtm.dev/en/latest/)
+- [homepage](https://www.devstream.io/)
+- [blog](https://www.devstream.io/blog/)
+- [docs](https://docs.devstream.io/en/latest/)
 - [Medium](https://medium.com/devstream)
 - [dev.to](https://dev.to/devstream)
 
@@ -51,7 +51,7 @@ _开发者注：从技术上讲，这个版本并不能向后兼容v0.3.0; 所�
 
 ## 开发
 
-- `dtm develop`命令现在可以为您生成更多的脚手架代码，以便您可以轻松地创建新插件. 如果您有兴趣，请阅读[这篇博客](https://blog.dtm.dev/post/2022-03/creating-a-plugin/).
+- `dtm develop`命令现在可以为您生成更多的脚手架代码，以便您可以轻松地创建新插件. 如果您有兴趣，请阅读[这篇博客](https://www.devstream.io/zh/blog/creating-a-devstream-dtm-plugin-for-anything/).
 - 多线程构建，感谢 @algobot76.
 - Makefile改进：当您创建新插件时，您不必更改 Makefile。感谢 @summingyu.
 - 自动发布新版本。
@@ -61,10 +61,10 @@ _开发者注：从技术上讲，这个版本并不能向后兼容v0.3.0; 所�
 
 - 创建了一个关于"output"功能的新文档。
 - 创建了一个关于`dtm destroy`命令的新文档。
-- 我们的文档可以在[readthedocs.io](https://docs.dtm.dev/en/latest/)查阅。
+- 我们的文档可以在[readthedocs.io](https://docs.devstream.io/en/latest/)查阅。
 
 ## 新晋贡献者
 
-* @algobot76 made their first contribution in https://github.com/merico-dev/stream/pull/353
+* @algobot76 made their first contribution in https://github.com/devstream-io/devstream/pull/353
 
-**全部改动**: https://github.com/merico-dev/stream/compare/v0.3.0...v0.3.1
+**全部改动**: https://github.com/devstream-io/devstream/compare/v0.3.0...v0.3.1

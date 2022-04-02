@@ -1,4 +1,4 @@
-baseURL = 'https://dtm.dev'
+baseURL = 'https://www.devstream.io'
 title = "DevStream"
 
 # Language settings
@@ -127,7 +127,7 @@ url_latest_version = "https://example.com"
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/devstream-io/website"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/merico-dev/stream"
+github_project_repo = "https://github.com/devstream-io/devstream"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -170,8 +170,8 @@ sidebar_search_disable = false
 [params.ui.feedback]
 enable = true
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/merico-dev/stream/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/merico-dev/stream/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/devstream-io/devstream/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/devstream-io/devstream/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -199,7 +199,7 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
   name = "GitHub"
-  url = "https://github.com/merico-dev/stream"
+  url = "https://github.com/devstream-io/devstream"
   icon = "fab fa-github"
   desc = "Development takes place here!"
 [[params.links.developer]]
@@ -216,12 +216,12 @@ enable = false
 [[menu.main]]
   name = "GitHub"
   weight = 40
-  url = "https://github.com/merico-dev/stream"
+  url = "https://github.com/devstream-io/devstream"
 
 [[menu.main]]
   name = "Docs"
   weight = 50
-  url = "https://docs.dtm.dev/en/latest/"
+  url = "https://docs.devstream.io/en/latest/"
 
 [[menu.main]]
   name = "Medium"

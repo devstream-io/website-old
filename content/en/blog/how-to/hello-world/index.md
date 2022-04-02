@@ -18,7 +18,7 @@ In this very first "hello world" post, I will:
 - walk you through our codebase;
 - explain briefly how to create your own plugin.
 
-If you haven't heard of DevStream yet, please have a quick glance over our [README](https://github.com/merico-dev/stream).
+If you haven't heard of DevStream yet, please have a quick glance over our [README](https://github.com/devstream-io/devstream).
 
 Without further adieu, let's get started.
 
@@ -58,7 +58,7 @@ All we had was an idea. We didn't know "how", or even "what". All we knew is, we
 
 The idea isn't mine, though. It would be arrogant if I said that I invented that. In fact, I learned it from lean manufacturing and agile development. To be honest, if I learned only one thing from lean manufacturing and agile, it's that we should reduce the product-to-customer cycle. It's [The Toyota Way](https://en.wikipedia.org/wiki/The_Toyota_Way).
 
-OK, enough rambling. If you are interested in DevStream, simply go to our [GitHub repo](https://github.com/merico-dev/stream), follow our README and quickstart, and have a go. I'm sure you will have some "WTF" moments during your first try, in which case, don't hesitate to head to our [GitHub Issues page](https://github.com/merico-dev/stream/issues) and hit the "New Issue" button hard. We have prepared a few templates there to help you quickly get your dissatisfaction out of your system. Heck, you can even create an issue about the issue templates themselves. For helpful contributions, we will give you a "good first issue" label and who knows, probably the marketing team will reach out and award you with a little physical prize as well!
+OK, enough rambling. If you are interested in DevStream, simply go to our [GitHub repo](https://github.com/devstream-io/devstream), follow our README and quickstart, and have a go. I'm sure you will have some "WTF" moments during your first try, in which case, don't hesitate to head to our [GitHub Issues page](https://github.com/devstream-io/devstream/issues) and hit the "New Issue" button hard. We have prepared a few templates there to help you quickly get your dissatisfaction out of your system. Heck, you can even create an issue about the issue templates themselves. For helpful contributions, we will give you a "good first issue" label and who knows, probably the marketing team will reach out and award you with a little physical prize as well!
 
 ---
 
@@ -70,7 +70,7 @@ Then let's dive a little deeper into it.
 
 A picture is worth a thousand words:
 
-![architecture-overview](https://github.com/merico-dev/stream/blob/main/docs/images/architecture-overview.png?raw=true)
+![architecture-overview](https://github.com/devstream-io/devstream/blob/main/docs/images/architecture-overview.png?raw=true)
 
 We use the [Go plugin](https://pkg.go.dev/plugin). I know this is kind of a big topic so here I'm only going to talk about it briefly:
 
@@ -80,11 +80,11 @@ We use the [Go plugin](https://pkg.go.dev/plugin). I know this is kind of a big 
 
 ### State
 
-We consider DevStream (CLI tool `dtm`, don't ask me why; it's another whole story. Read [this](https://github.com/merico-dev/stream#why-dtm) if you enjoy stories) as a "[state machine](https://en.wikipedia.org/wiki/Finite-state_machine)".
+We consider DevStream (CLI tool `dtm`, don't ask me why; it's another whole story. Read [this](https://github.com/devstream-io/devstream#why-dtm) if you enjoy stories) as a "[state machine](https://en.wikipedia.org/wiki/Finite-state_machine)".
 
 Simply put, given input and the current state, DevStream will calculate what to do, so that "what you want" (what you described in the input) is "what you get".
 
-If you are interested, read more [here](https://github.com/merico-dev/stream/blob/main/docs/core_concept.md).
+If you are interested, read more [here](https://github.com/devstream-io/devstream/blob/main/docs/core_concept.md).
 
 ### Directory structure
 
@@ -102,14 +102,14 @@ Of course, this isn't the only way to set up a repo structure for a Golang app. 
 
 ### Core / Plugin
 
-- Core code: https://github.com/merico-dev/stream/tree/main/internal/pkg/pluginengine
-- Plugins Code: https://github.com/merico-dev/stream/tree/main/internal/pkg/plugin
+- Core code: https://github.com/devstream-io/devstream/tree/main/internal/pkg/pluginengine
+- Plugins Code: https://github.com/devstream-io/devstream/tree/main/internal/pkg/plugin
 
 ### How Exactly Does `dtm apply` Work? Is it "Automatic", or "Automagic"?
 
-1. It all starts with [`/cmd/devstream/main.go`](https://github.com/merico-dev/stream/blob/main/cmd/devstream/main.go).
-2. It executes the `apply` command in [`/cmd/devstream/apply.go`](https://github.com/merico-dev/stream/blob/main/cmd/devstream/apply.go).
-3. The _Engine_ [`/internal/pkg/pluginengine`](https://github.com/merico-dev/stream/tree/main/internal/pkg/pluginengine) runs the logic for `apply` at [`/internal/pkg/pluginengine/cmd_apply.go`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/cmd_apply.go).
+1. It all starts with [`/cmd/devstream/main.go`](https://github.com/devstream-io/devstream/blob/main/cmd/devstream/main.go).
+2. It executes the `apply` command in [`/cmd/devstream/apply.go`](https://github.com/devstream-io/devstream/blob/main/cmd/devstream/apply.go).
+3. The _Engine_ [`/internal/pkg/pluginengine`](https://github.com/devstream-io/devstream/tree/main/internal/pkg/pluginengine) runs the logic for `apply` at [`/internal/pkg/pluginengine/cmd_apply.go`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/cmd_apply.go).
 
 Then, happy digging around in the "Apply" function!
 
@@ -122,7 +122,7 @@ Alright, alright, here you go.
 First, install Go. If you haven't done so, please refer to the [official doc here](https://go.dev/doc/install).
 
 ```bash
-git clone https://github.com/merico-dev/stream.git && cd stream
+git clone https://github.com/devstream-io/devstream.git && cd stream
 go install golang.org/x/tools/cmd/goimports@latest
 
 # make sure your GOPATH/bin is in your PATH
@@ -145,12 +145,12 @@ dtm apply -f path_to_your_config.yaml
 Congratulations if you have followed so far. Why not go the extra mile by creating a new plugin of your own and play with it?
 
 Each plugin needs to implement four interfaces, defined as follows:
-- [`Create`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L12)
-- [`Read`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L13)
-- [`Update`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L14)
-- [`Delete`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L16)
+- [`Create`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L12)
+- [`Read`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L13)
+- [`Update`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L14)
+- [`Delete`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L16)
 
-Refer to an existing plugin for more detail. For example, [this one](https://github.com/merico-dev/stream/blob/main/cmd/argocd/main.go).
+Refer to an existing plugin for more detail. For example, [this one](https://github.com/devstream-io/devstream/blob/main/cmd/argocd/main.go).
 
 I know, I know, before you complain, let me tell you this: due to the nature that each plugin is in fact a separate thing from others, there will be some duplicated scaffolding, copying, and pasting when you try to create a new plugin.
 

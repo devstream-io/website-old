@@ -55,7 +55,7 @@ resources:
 - 带你走读我们的代码库（不要担心，不会涉及到复杂的源码，复杂的我也不会）；
 - 告诉你如何开发自定义插件（不要担心，看完了你只会知道一个大概，真想上手还是得看我们的官方文档）。
 
-如果你没有听过 DevStream，不着急，请先花半分钟时间浏览下 DevStream 的 [README](https://github.com/merico-dev/stream)。
+如果你没有听过 DevStream，不着急，请先花半分钟时间浏览下 DevStream 的 [README](https://github.com/devstream-io/devstream)。
 
 ---
 
@@ -70,12 +70,12 @@ resources:
 既然是想要知道"用户"想要什么功能，为什么不早点 release 出去，让用户来告诉我们还缺什么，让用户告诉我们哪里做的不好呢？
 那就发出去吧，先 release，听听用户的骂声。我们要做的，就是不给用户第二次骂的机会，以最快的速度反馈用户的反馈，解决用户的问题。
 
-行，废话了这么多，如果你对 DevStream 有一些兴趣，欢迎打开我们的 [GitHub repo](https://github.com/merico-dev/stream)，看下 README 和 quickstart，体验一下 DevStream 的功能。
+行，废话了这么多，如果你对 DevStream 有一些兴趣，欢迎打开我们的 [GitHub repo](https://github.com/devstream-io/devstream)，看下 README 和 quickstart，体验一下 DevStream 的功能。
 我相信你在第一次使用 dtm 命令的时候，肯定心中会多次燃起骂人的欲望：
 
 **什么破玩意！！！**
 
-没关系，打开我们的 [Issues 页面](https://github.com/merico-dev/stream/issues)，畅所欲言！只要 GitHub 不"和谐"你，我们肯定不"和谐"你。
+没关系，打开我们的 [Issues 页面](https://github.com/devstream-io/devstream/issues)，畅所欲言！只要 GitHub 不"和谐"你，我们肯定不"和谐"你。
 你愿意骂我，就说明你心里还是有我，哈哈，谢谢！我心里也有你！
 
 当然，提 Issues 是一种社区贡献行为，没错，不只是 pr，Issues 也算。对于"社区贡献者"我们会提供无比热情的帮助（绝对超过你的想象）。
@@ -93,7 +93,7 @@ Good！让我们丢掉双桨，屏住呼吸，跳下去吧。深入看下 DevStr
 
 一张好图胜千言啊
 
-![architecture-overview](https://github.com/merico-dev/stream/blob/main/docs/images/architecture-overview.png?raw=true)
+![architecture-overview](https://github.com/devstream-io/devstream/blob/main/docs/images/architecture-overview.png?raw=true)
 
 *（如果你觉得这个图不够好，请移步英文版，英文版作者绘制的这个图，和我没关系）*
 
@@ -104,10 +104,10 @@ Good！让我们丢掉双桨，屏住呼吸，跳下去吧。深入看下 DevStr
 
 ### 状态
 
-我们把 DevStream (CLI 工具名字叫 dtm，别问我为啥，这是一个很长的故事，如果你感兴趣，可以看[这里](https://github.com/merico-dev/stream#why-dtm)) 
+我们把 DevStream (CLI 工具名字叫 dtm，别问我为啥，这是一个很长的故事，如果你感兴趣，可以看[这里](https://github.com/devstream-io/devstream#why-dtm)) 
 当作一个 "[状态机](https://en.wikipedia.org/wiki/Finite-state_machine)"。
 
-给一个输入，结合当前的状态，DevStream 会接着计算接下来该干什么。如果你对此感兴趣，那就跳到[这里](https://github.com/merico-dev/stream/blob/main/docs/core_concept.md) 再看几眼。
+给一个输入，结合当前的状态，DevStream 会接着计算接下来该干什么。如果你对此感兴趣，那就跳到[这里](https://github.com/devstream-io/devstream/blob/main/docs/core_concept.md) 再看几眼。
 
 ### 目录结构
 
@@ -124,15 +124,15 @@ Good！让我们丢掉双桨，屏住呼吸，跳下去吧。深入看下 DevStr
 
 ### Core / Plugin
 
-- Core 代码: https://github.com/merico-dev/stream/tree/main/internal/pkg/pluginengine
-- Plugins 代码: https://github.com/merico-dev/stream/tree/main/internal/pkg/plugin
+- Core 代码: https://github.com/devstream-io/devstream/tree/main/internal/pkg/pluginengine
+- Plugins 代码: https://github.com/devstream-io/devstream/tree/main/internal/pkg/plugin
 
 ### `dtm apply` 命令背后的逻辑是啥? 
 
-1. 从这里开始： [`/cmd/devstream/main.go`](https://github.com/merico-dev/stream/blob/main/cmd/devstream/main.go).
-2. 接着 `apply` 命令在 [`/cmd/devstream/apply.go`](https://github.com/merico-dev/stream/blob/main/cmd/devstream/apply.go).
-3. 然后 _引擎_ [`/internal/pkg/pluginengine`](https://github.com/merico-dev/stream/tree/main/internal/pkg/pluginengine) 运行所有的 `apply` 逻辑，
-   在这里：[`/internal/pkg/pluginengine/cmd_apply.go`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/cmd_apply.go).
+1. 从这里开始： [`/cmd/devstream/main.go`](https://github.com/devstream-io/devstream/blob/main/cmd/devstream/main.go).
+2. 接着 `apply` 命令在 [`/cmd/devstream/apply.go`](https://github.com/devstream-io/devstream/blob/main/cmd/devstream/apply.go).
+3. 然后 _引擎_ [`/internal/pkg/pluginengine`](https://github.com/devstream-io/devstream/tree/main/internal/pkg/pluginengine) 运行所有的 `apply` 逻辑，
+   在这里：[`/internal/pkg/pluginengine/cmd_apply.go`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/cmd_apply.go).
 
 然后，靠你自己去挖掘其他细节了！
 
@@ -145,7 +145,7 @@ Good！让我们丢掉双桨，屏住呼吸，跳下去吧。深入看下 DevStr
 首先装个 Go，如果你没有装好，可以参考[官方文档](https://go.dev/doc/install).
 
 ```bash
-git clone https://github.com/merico-dev/stream.git && cd stream
+git clone https://github.com/devstream-io/devstream.git && cd stream
 go install golang.org/x/tools/cmd/goimports@latest
 
 # make sure your GOPATH/bin is in your PATH
@@ -168,12 +168,12 @@ dtm apply -f path_to_your_config.yaml
 恭喜你已经走到这步了，要不要玩一点刺激的？比如尝试开发一个新插件？
 
 每个插件都需要实现一些接口，定义在这些地方：
-- [`Create`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L12)
-- [`Read`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L13)
-- [`Update`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L14)
-- [`Delete`](https://github.com/merico-dev/stream/blob/main/internal/pkg/pluginengine/plugin.go#L16)
+- [`Create`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L12)
+- [`Read`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L13)
+- [`Update`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L14)
+- [`Delete`](https://github.com/devstream-io/devstream/blob/main/internal/pkg/pluginengine/plugin.go#L16)
 
-可以参考一个已经存在的插件，比如[这个](https://github.com/merico-dev/stream/blob/main/cmd/argocd/main.go).
+可以参考一个已经存在的插件，比如[这个](https://github.com/devstream-io/devstream/blob/main/cmd/argocd/main.go).
 
 好好好，在你抱怨之前我想告诉你一个秘密武器！开发一个新插件时需要复制粘贴很多的代码，创建重复的目录结构，这种事情让人感觉很不爽！
 你觉得我会容忍这种不爽存在超过一天？？？
