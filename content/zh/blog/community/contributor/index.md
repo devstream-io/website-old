@@ -11,7 +11,7 @@ resources:
     byline: "Photo: 胡涛 / CC-BY-CA"
 ---
 
-{{< imgproc featured-background Fill "1200x800" >}}
+{{< imgproc featured-background Fill "3700x2350" >}}
 
 三星堆纪念品马克杯
 
