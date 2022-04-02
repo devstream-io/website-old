@@ -37,9 +37,8 @@ _Developers' note: technically, this version isn't backward compatible with v0.3
 First things first: we have a new logo now! Check out our [README.md](https://github.com/devstream-io/devstream#readme=).
 
 Our website is live now, too. Visit us:
-- [homepage](https://dtm.dev/)
-- [blog](https://blog.dtm.dev/)
-- [docs](https://docs.dtm.dev/en/latest/)
+- [homepage](https://www.devstream.io)
+- [docs](https://docs.devstream.io/en/latest/)
 - [Medium](https://medium.com/devstream)
 - [dev.to](https://dev.to/devstream)
 
@@ -49,7 +48,7 @@ Our website is live now, too. Visit us:
 - Installation via brew is supported now: brew install devstream-io/devstream/dtm. Thanks to @algobot76.
 
 ## Develop
-- dtm develop now generates more scaffolding code for you so that you can easily create a new plugin. If you are interested, read [this blog post](https://blog.dtm.dev/post/2022-03/creating-a-plugin/).
+- dtm develop now generates more scaffolding code for you so that you can easily create a new plugin. If you are interested, read [this blog post](https://www.devstream.io/blog/creating-a-devstream-dtm-plugin-for-anything/).
 - We support multi-threaded build now, thanks to @algobot76.
 - Makefile is greatly improved so that when you create a new plugin, you don't have to change the Makefile at all. Thanks to @summingyu.
 - We can automatically release a new version now.
@@ -58,7 +57,7 @@ Our website is live now, too. Visit us:
 ## Docs
 - A new doc about the "output" feature is created.
 - A new doc about the dtm destroy command is created.
-- Our docs are now available on [readthedocs.io](https://docs.dtm.dev/en/latest/)
+- Our docs are now available on [readthedocs.io](https://docs.devstream.io/en/latest/)
 
 ## Detailed Changes
 * Refactor: unify the parameter type naming of various plugins to Options by @summingyu in https://github.com/devstream-io/devstream/pull/327

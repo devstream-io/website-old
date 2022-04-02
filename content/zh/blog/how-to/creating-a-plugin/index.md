@@ -39,7 +39,7 @@ DevStream 是一个能够快速安装、更新、管理、整合你的 DevOps �
 
 别不信呀，你试过没有？要是不行，欢迎评论区里喷我。
 
-怎么试？我们有 [文档](https://docs.dtm.dev/en/latest/) 呀，打开，然后找到 Quick Start 章节，对着敲！
+怎么试？我们有 [文档](https://docs.devstream.io/en/latest/) 呀，打开，然后找到 Quick Start 章节，对着敲！
 
 （应该没有人注意到这一段不止一句话吧）
 
