@@ -8,20 +8,14 @@ resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
   params:
-    byline: "Photo: Daniel Hu / CC-BY-CA"
+    byline: "Photo: 胡涛 / CC-BY-CA"
 ---
+
 {{< imgproc featured-background Fill "1200x800" >}}
+
 三星堆纪念品马克杯
+
 {{< /imgproc >}}
-
-三月新晋贡献者
-
-001-徐武
-002-陈映初
-003-余苏明
-004-谢开天
-
----
 
 ## 2022 年 3 月新晋贡献者
 
