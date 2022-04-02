@@ -11,7 +11,7 @@ resources:
     byline: "Photo: 胡涛 / CC-BY-CA"
 ---
 
-{{< imgproc featured-background Fill "1200x800" >}}
+{{< imgproc featured-background Fill "2300x1200" >}}
 
 玉石公园-自行车
 
