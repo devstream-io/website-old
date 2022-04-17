@@ -57,6 +57,8 @@ resources:
 
 (没错，这些照片看着很不专业。抢镜的各种杂物。但是。真实！)
 
+(各位 Members，如果觉得自己没发挥好，请随时将最新照片发给我，I'll update it in no time!)
+
 ![](./cyc-cup.jpg)
 
 ![](./ysm-cup.jpg)
