@@ -61,4 +61,6 @@ resources:
 
 ![](./cyc-cup.jpg)
 
+---
+
 ![](./ysm-cup.jpg)
