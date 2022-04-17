@@ -52,3 +52,11 @@ resources:
 ---
 
 ![](./xiekaitian.jpeg)
+
+### 秀杯子时间
+
+(没错，这些照片看着很不专业。抢镜的各种杂物。但是。真实！)
+
+![](./cyc-cup.jpg)
+
+![](./ysm-cup.jpg)
