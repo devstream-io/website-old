@@ -63,7 +63,7 @@ Wait a few seconds and we can see the starting page:
 
 Click the “gear" ⚙️ icon to change settings about Docker Desktop. For example, if we need to run a lot of containers, we might need to increase the memory. Here, we changed the memory to 4.00 GB:
 
-![docker setup](./d.png)
+![docker setup](./e.png)
 
 Remember to "Apply & Restart" to ensure the changes are effective.
 

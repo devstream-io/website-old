@@ -57,7 +57,7 @@ Let's Get Started!
 
 我们可以点击右上角的“齿轮⚙️”按钮来修改 Docker Desktop 的一些配置，比如调整 Docker 可以使用的资源等。如果后面我们需要启动的容器稍多一些，内存不够用了，可以回到这里来调整，比如我这里把 Memory 调大到 4.00 GB：
 
-![docker setup](./d.png)
+![docker setup](./e.png)
 
 修改后记得点击右下角的“Apply & Restart”才会生效。
 
