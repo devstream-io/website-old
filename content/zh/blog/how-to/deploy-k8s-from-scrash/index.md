@@ -1,6 +1,6 @@
 ---
 date: 2022-04-18
-title: "Deploy k8s with Kind"
+title: "Deploy k8s from scrash"
 linkTitle: "从零开始快速搭建本地 Kubernetes 测试环节"
 description: "从零开始快速搭建本地 Kubernetes 测试环节"
 author: 胡涛 ([@daniel-hutao](https://github.com/daniel-hutao))
