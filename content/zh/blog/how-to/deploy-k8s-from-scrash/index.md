@@ -400,3 +400,10 @@ docker exec -it dev-control-plane crictl images
 ```
 
 其中 dev-control-plane 是 node 容器名，有多套环境时这个名字需要对应灵活切换。另外可以通过 crictl -h 查看 crictl 所支持的其他命令，比如 crictl rmi <image_name> 可以用于删除镜像等。
+
+## 小结
+
+没啥好总结的，总之希望大家搭环境顺利！
+
+I have to AFK and have a cup of coffee NOW!
+
