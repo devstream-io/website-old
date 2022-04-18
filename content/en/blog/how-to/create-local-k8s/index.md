@@ -47,23 +47,23 @@ Docker works in a way using Linux's Namespace and Cgroup. It's quite easy to ins
 
 Go to https://www.docker.com/products/docker-desktop, find the correct version of Docker Desktop (Intel/amd64, or M1/arm64):
 
-![docker download](../../../../zh/blog/how-to/deploy-k8s-from-scrash/a.png)
+![docker download](./a.png)
 
 Double click on the `Docker.dmg` file, and we see the installation interface like the following:
 
-![docker install](../../../../zh/blog/how-to/deploy-k8s-from-scrash/b.png)
+![docker install](./b.png)
 
 Simply drag "Docker" to our "Applications," and within a few seconds, it's done! We can start it from the Launchpad:
 
-![docker logo](../../../../zh/blog/how-to/deploy-k8s-from-scrash/c.png)
+![docker logo](./c.png)
 
 Wait a few seconds and we can see the starting page:
 
-![docker started](../../../../zh/blog/how-to/deploy-k8s-from-scrash/d.png)
+![docker started](./d.png)
 
 Click the “gear" ⚙️ icon to change settings about Docker Desktop. For example, if we need to run a lot of containers, we might need to increase the memory. Here, we changed the memory to 4.00 GB:
 
-![docker setup](../../../../zh/blog/how-to/deploy-k8s-from-scrash/d.png)
+![docker setup](./d.png)
 
 Remember to "Apply & Restart" to ensure the changes are effective.
 
