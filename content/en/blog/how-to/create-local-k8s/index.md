@@ -289,7 +289,7 @@ $ kind create cluster --config ha-config.yaml \
  --image=kindest/node:v1.22.0 --name=dev6
 ```
 
-We can see familiar outputs, with the exception being "Configuring the external load balancer”和“Joining more control-plane nodes":
+We can see familiar outputs, with the exception being "Configuring the external load balancer” and “Joining more control-plane nodes":
 
 ```sh
 Creating cluster "dev6" ...
